@@ -22,7 +22,16 @@ And then run the pet class.
 python3 pet_class.py
 ```
 ### Normal usage
-Since this neural network is ran in a Docker container, Docker is a requierement that needs to be installed. Then, the following commands must be ran sequentially:
+Since this neural network is ran in a Docker container, Docker is a requierement that needs to be installed. Then, the following commands must be ran sequentially.
+First, build the Docker image.
 ```
-
+sudo docker build -t pet-classification .
+```
+Then, after the image has been built, run the container ensuring that port 5000 is free.
+```
+sudo docker run -p 5000:5000 pet-classification
+```
+The container will listen non-stop, to communicate with the container, the following cURL command is used:
+```
+curl -X POST -F "image=@" http://localhost:5000/classify
 ```
