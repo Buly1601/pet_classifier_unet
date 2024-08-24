@@ -21,3 +21,8 @@ And then run the pet class.
 ```
 python3 pet_class.py
 ```
+### Normal usage
+Since this neural network is ran in a Docker container, Docker is a requierement that needs to be installed. Then, the following commands must be ran sequentially:
+```
+
+```
