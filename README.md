@@ -33,5 +33,5 @@ sudo docker run -p 5000:5000 pet-classification
 ```
 The container will listen non-stop, to communicate with the container, the following cURL command is used:
 ```
-curl -X POST -F "image=@" http://localhost:5000/classify
+curl -X POST -F "image=@[path-to-the-image]" http://localhost:5000/classify
 ```
