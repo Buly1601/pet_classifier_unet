@@ -114,5 +114,6 @@ class PetClassification:
 
 
 if __name__ == "__main__":
+    img = ""
     pet = PetClassification()
-    pet.main()
+    pet.main(img)
